@@ -1,0 +1,16 @@
+remove mongodb :
+https://stackoverflow.com/questions/29554521/uninstall-mongodb-from-ubuntu/40195407
+
+setting mongodb : to remove user:
+sudo nano /var/lib/dpkg/statoverride
+
+
+install  mongodb:
+https://www.itzgeek.com/post/how-to-install-mongodb-4-2-4-0-on-debian-10/
+
+
+//-------------------------------------------------------------------------->
+
+sudo rm /var/lib/mongodb/mongod.lock
+sudo mongod --dbpath /var/lib/mongodb/ --repair
+sudo mongod --dbpath /var/lib/mongodb/ --journal
